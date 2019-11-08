@@ -1,0 +1,513 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #fff;
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+p {
+  line-height: 1.3;
+}
+
+li {
+  color: #000;
+}
+
+/* HEADER */
+.hero {
+  /* Linear-gradient to set a shadow on the image */
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/books_2400x1600.jpg");
+  height: 70%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-nav {
+  padding: 15px 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-nav img {
+  width: 50px;
+}
+
+.btn-login {
+  padding: 13px;
+  width: 80px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  text-align: center;
+  }
+  
+.btn-login:hover {
+  background: #fff;
+  color: #7a4856;
+  transition-duration: .5s;
+  }
+
+.hero-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+/* MAIN CONTAINER */
+
+.main-top {
+  background: #665E5A;
+  width: 100%;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+/* FORM */
+.form-main {
+  width: 100%;
+  background: #7a4856;
+  overflow-x: auto;
+  border-radius: 3px;
+  padding-top: 15px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
+input[type=text], [type=number], [type=email], [type=password] {
+  font-size: 1em;
+  font-family: Calibri, Verdana;
+  padding: 8px;
+  margin: 3px 0;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  background: #fff;
+}
+
+input:valid {
+  background: #fff;
+}
+
+input:invalid {
+  background: #FFE0E0;
+}
+
+/* Customize the label for checkboxes */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkbox {
+  background: #a09993;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkbox:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkbox:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Customize the label for radio */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Hide the browser's default checkbox */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* When the checkbox is checked add a background */
+.radio-container input:checked ~ .radiobtn {
+  background: #a09993;
+}
+/* Create the indicator (hidden when not checked) */
+.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the dot when checked */
+.radio-container input:checked ~ .radiobtn:after {
+  display: block;
+}
+
+/* Style the dot */
+.radio-container .radiobtn:after {
+  top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+button {
+  padding: 10px;
+  margin: 15px 0 15px 0;
+  width: 100%;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  text-align: center;
+  }
+  
+button:hover {
+  background: #fff;
+  color: #8C5162;
+  cursor: pointer;
+  transition-duration: .5s;
+  }
+
+ /* .div .submittext should be activated after submit only */
+.submittext {
+  background: #7a4856;
+  width: 100%;
+  padding: 70px 0 90px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  /* z-index: 100; */
+  display: none;
+}
+
+.aftersubmit + .submittext {
+  display: block;
+}
+
+.aftersubmit {
+  display: none;
+}
+
+/* ACCORDION */
+
+.accordion-main {
+  width: 100%;
+  background: #665E5A;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-container {
+  width: 100%;
+  background: #665E5A;
+  padding: 15px 15px 25px 15px;
+  color: #fff;
+}
+
+.accordion-title {
+  background: #665E5A;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.question {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: #7a4856;
+  padding: 15px;
+  display: flex; /*Needs flex-box to place the question-title and plus*/
+  justify-content: flex-start;
+}
+
+#section5 {
+  border-bottom: 2px solid #fff;
+}
+
+.question:hover {
+  background: #8C5162;
+  cursor: pointer;
+}
+
+/* Style .answer how you want it to be shown when activated */
+.answer {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: #665E5A;
+  padding: 5px 10px 0 10px;
+  height: 0px; /*For CSS animation*/
+  opacity: 0; /*For CSS animation*/
+  overflow: hidden; /*For CSS animation*/
+  transition: all 0.8s ease-in-out; /*For CSS animation*/
+}
+
+/* If class .active is toggles and div .answer is immediately after, display the answer */
+.active + .answer {
+  opacity: 1;
+  height: 220px;
+}
+
+/* Adds a + after .question*/
+.question::after {
+  content: '+';
+  margin-left: auto; /*To move it to the right side of div*/
+}
+/* Changes to a - if class .active is added */
+.question.active::after {
+  content: '-';
+}
+
+/* COURSES */
+
+.courses-main {
+  /* border: 2px solid red; */
+  width: 100%;
+  background: #a09993;
+  align-items: center;
+  padding: 15px;
+}
+.courses-container {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.course {
+  border-radius: 3px;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.course h3 {
+  color: #000;
+  text-align: center;
+}
+.course p {
+  padding: 10px;
+}
+
+.course img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+/* FOOTER */
+footer {
+  background: #7a4856;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+}
+
+footer img {
+  width: 40px;
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .form-main {
+    width: 50%;
+  }
+
+  .accordion-main {
+    width: 50%;
+  }
+
+  .courses-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .course {
+    flex-grow: 1;
+    width: 45%;
+    margin: 10px;
+  }
+
+  .course img {
+    /* height: 200px; */
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+  }
+  }
+
+/* MEDIA QUERY DESKTOP */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  .hero-container {
+    margin-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .main-container {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .form-main {
+    width: 40%;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    flex-grow: 1;
+  }
+
+  .accordion-main {
+    width: 40%;
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+  
+  .courses-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .course {
+    width: 40%;
+    flex-grow: 1; 
+    margin: 10px;
+    background: #fff;
+  }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3: Business website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HERO HEADER -->
+  <section class="hero">
+    <section class="hero-nav">
+      <img src="images/logo-ant.png" alt="Logo">
+      <a class="btn-login" href="#">LOG IN</a>
+    </section>
+    <div class="hero-container">
+      <h1>IMPROVE YOUR SKILLS</h1>
+      <h2>Ant Skills gives you the best courses</h2>
+    </div>
+  </section>
+
+  <!-- MAIN  -->
+  <section class="main-top">
+    <!-- MAIN CONTAINER -->
+    <section class="main-container">
+
+      <!-- SIGN UP FORM -->
+      <section class="form-main">
+        <div class="form-title">
+          <h2>SIGN UP FOR A COURSE</h2>
+        </div>
+        <section class="form-container">
+          <form id="signup" action="https://httpbin.org/anything" target="_blank" method="POST">
+
+            <h3>PERSONAL INFORMATION</h3>
+            <label>
+              Name
+              <input type="text" name="name" required>
+            </label>
+
+            <label>
+              Address
+              <input type="text" name="address" required>
+            </label>
+
+            <label>
+              ZIP code
+              <input type="number" name="zip" placeholder="12345" required>
+            </label>
+
+            <label>
+              City
+              <input type="text" name="city" required>
+            </label>
+
+            <label>
+              E-mail (also your username)
+              <input type="email" name="email" placeholder="name@mail.com" required>
+            </label>
+
+            <label>
+              Choose a password
+              <input type="password" name="psw" minlength="5">
+            </label>
+
+            <h3>CHOOSE COURSE(S)</h3>
+            <label class="checkbox-container">Project management
+              <input type="checkbox" name="course" value="project management"><span class="checkbox"></span>
+            </label>
+
+            <label class="checkbox-container">Microsoft Office
+              <input type="checkbox" name="course" value="ms office"><span class="checkbox"></span>
+            </label>
+
+            <label class="checkbox-container">Leadership development
+              <input type="checkbox" name="course" value="leadership dev"><span class="checkbox"></span>
+            </label>
+
+            <label class="checkbox-container">Presentation technique
+              <input type="checkbox" name="course" value="presentation technique"><span class="checkbox"></span>
+            </label>
+
+            <h3>OTHER INFORMATION</h3>
+            <label class="radio-container">Company
+              <input type="radio" name="customer type" value="company"><span class="radiobtn"></span>
+            </label>
+
+            <label class="radio-container">Private
+              <input type="radio" name="customer type" value="private"><span class="radiobtn"></span>
+            </label>
+
+            <button type="submit" id="btn-reg">REGISTER</button>
+
+          </form>
+
+          <div class="submittext">THANK YOU FOR SIGNING UP!</div>
+
+        </section>
+      </section>
+
+      <!-- ACCORDION -->
+      <section class="accordion-main">
+        <section class="accordion-container">
+          <div class="accordion-title">
+            <h2>QUESTIONS?</h2>
+
+          </div>
+          <div class="question" id="section1">WE ARE ANT SKILLS</div>
+          <div class="answer">
+            <p>Ant Skills AB is founded by Sofie Nyblad and is an imaginary company that provides Swedens best imaginary
+              courses. </p>
+          </div>
+
+          <div class="question" id="section2">LOCATION & FACILITIES</div>
+          <div class="answer">
+            <p>The courses take place in Bollnäs and Stockholm, please read at the course information where your course
+              will be given. If you have any food allergies, pleas contact us on info@antskills.se</p>
+          </div>
+
+          <div class="question" id="section3">PAYMENT INFORMATION</div>
+          <div class="answer">
+            <p>When you confirm your order and click on "REGISTER" you will have your invoice sent by
+              email or mailed to your specified billing address. The invoice must have been paid to Ant Skills no later
+              than fourteen days from the invoice date. In case
+              of
+              late payment, a reminder fee is made.
+              Ant Skills reserves itself for customary credit assessment.</p>
+          </div>
+
+          <div class="question" id="section4">CONTACT INFORMATION</div>
+          <div class="answer">
+            <p>Ant Skills AB</p>
+            <p>Linnégatan 6, Bollnäs</p>
+            <p>070 - 526 48 20</p>
+            <p>info@antskills.se</p>
+          </div>
+
+          <div class="question" id="section5">HELP</div>
+          <div class="answer">
+            <p>For help about payment please e-mail us on info@antskills.se</p>
+            <p>For help with log in please e-mail us on support@antskills.se</p>
+          </div>
+
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses-main">
+    <h2>ANT SKILLS COURSES</h2>
+    <section class="courses-container">
+      <article class="course">
+        <img src="images/group.jpg" alt="Group">
+        <h3>PROJECT MANAGEMENT</h3>
+        <p>The participants learn what they need to set up a project using resources wisely while making sure that
+          benefits to the organization come first.</p>
+        <ul>
+          <li>LOCATION: Stockholm</li>
+          <li>DATE: 8 nov 2019</li>
+          <li>PRICE: 8 500 SEK</li>
+        </ul>
+      </article>
+      <article class="course">
+        <img src="images/office.jpg" alt="Computer">
+        <h3>MICROSOFT OFFICE</h3>
+        <p>The aim of the course is to gain a good understanding of what Microsoft Office is and how you can be
+          more
+          efficient in your everyday work life.</p>
+        <ul>
+          <li>LOCATION: Bollnäs</li>
+          <li>DATE: 9 dec 2019</li>
+          <li>PRICE: 5 500 SEK</li>
+        </ul>
+      </article>
+      <article class="course">
+        <img src="images/leader.jpg" alt="Person">
+        <h3>LEADERSHIP DEVELOPMENT</h3>
+        <p> The chain of value is clear, great leadership drive engagement, a higher level of commitment gives
+          increased business results, growth, profitability and more satisfied customers. We help you to create
+          engaged leaders.</p>
+        <ul>
+          <li>LOCATION: Stockholm</li>
+          <li>DATE: 8 jan 2020</li>
+          <li>PRICE: 6 500 SEK</li>
+        </ul>
+      </article>
+      <article class="course">
+        <img src="images/mic.jpg" alt="Microphone">
+        <h3>PRESENTATION TECHNIQUE</h3>
+        <p>Communication is perhaps the most important tool when it comes to succeeding with leadership. It’s also
+          something that everyone can practice and improve.</p>
+        <ul>
+          <li>LOCATION: Stockholm</li>
+          <li>DATE: 7 nov 2019</li>
+          <li>PRICE: 6 500 SEK</li>
+        </ul>
+      </article>
+    </section>
+  </section>
+
+  <footer>
+    <img src="images/logo-ant.png" alt="Logo">
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
