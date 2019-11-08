@@ -1,6 +1,6 @@
 ## Project 3 - Build a Business web site
 
-This week’s project was to create a site for my fantasy education company Ant Skills.
+Project week 3 @ Technigo Bootcamp was to create a site for my fantasy education company Ant Skills.
 
 Note:
 - The login-button has no function

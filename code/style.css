@@ -420,10 +420,12 @@ button:hover {
 /* FOOTER */
 footer {
   background: #7a4856;
+  color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  padding: 50px;
+  align-items: center;
+  padding: 30px;
 }
 
 footer img {
