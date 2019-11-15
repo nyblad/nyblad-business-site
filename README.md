@@ -16,7 +16,7 @@ Note:
 ## Technologies used
 - HTML5 <br>
 - CSS3 <br>
-- JavaScript
+- JavaScript ES6
 
 ## Images/Credits
 Images by https://www.pexels.com
@@ -24,9 +24,3 @@ Images by https://www.pexels.com
 <br>
 <br>
 Sofie Nyblad 2019
-
-### NOTES FROM DEVELOPER:
-- The login-button has no function
-- The form submits to HTTPbin, go back to website in previous window
-
-----------------------
